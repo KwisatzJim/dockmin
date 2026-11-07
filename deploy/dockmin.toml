@@ -1,0 +1,11 @@
+# Replace these exact URLs with your server's LAN HTTPS and Tailscale Serve URLs.
+listen = "127.0.0.1:9090"
+origins = ["https://dockmin.home.arpa", "https://dockmin-host.YOUR-TAILNET.ts.net"]
+database = "/var/lib/dockmin/dockmin.sqlite"
+static_dir = "/opt/dockmin/web"
+ssh_config = "/etc/dockmin/ssh_config"
+known_hosts = "/var/lib/dockmin/known_hosts"
+secure_cookie = true
+concurrency = 3
+command_timeout_seconds = 1800
+health_refresh_seconds = 60

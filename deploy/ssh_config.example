@@ -1,0 +1,13 @@
+# Docker PCs: replace addresses, usernames and aliases before use.
+# Keep credentials under /etc/dockmin; ProtectHome blocks desktop SSH keys.
+Host pc1 pc2 pc3
+    User docker-admin
+    IdentityFile /etc/dockmin/id_ed25519
+    IdentitiesOnly yes
+
+Host pc1
+    HostName pc1.home.arpa
+Host pc2
+    HostName pc2.home.arpa
+Host pc3
+    HostName pc3.home.arpa

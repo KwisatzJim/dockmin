@@ -1,0 +1,6 @@
+# Replace dockmin.home.arpa with your LAN DNS name resolving to the Dockmin server.
+# Clients need to trust Caddy's local CA for LAN HTTPS.
+dockmin.home.arpa {
+    tls internal
+    reverse_proxy 127.0.0.1:9090
+}

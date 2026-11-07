@@ -1,0 +1,23 @@
+/target/
+/web/node_modules/
+/web/dist/
+*.sqlite*
+.env
+/dist/
+
+__pycache__/
+*.pyc
+/.deployment/
+/deploy/pi2/build/
+
+# Local installation state and machine-specific configuration.
+/.aws/
+/.agents/
+/.codex/
+/deploy/pi2/
+/data/
+/development.toml
+.env.*
+*.pem
+id_ed25519*
+known_hosts*
